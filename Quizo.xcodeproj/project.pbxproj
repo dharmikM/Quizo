@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3997F164290895C5007BDCFC /* AboutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F163290895C5007BDCFC /* AboutScreenVC.swift */; };
 		3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F1682908A960007BDCFC /* QuizScreenVC.swift */; };
+		3997F16B2908AC51007BDCFC /* AboutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */; };
 		39D22813290862370090786D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22812290862370090786D /* AppDelegate.swift */; };
 		39D22815290862370090786D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22814290862370090786D /* SceneDelegate.swift */; };
 		39D22817290862370090786D /* LevelSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22816290862370090786D /* LevelSelectorVC.swift */; };
@@ -24,8 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3997F163290895C5007BDCFC /* AboutScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreenVC.swift; sourceTree = "<group>"; };
 		3997F1682908A960007BDCFC /* QuizScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenVC.swift; sourceTree = "<group>"; };
+		3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutScreenVC.swift; sourceTree = "<group>"; };
 		39D2280F290862370090786D /* Quizo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D22812290862370090786D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D22814290862370090786D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		39797C66290876E6007AF066 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3997F163290895C5007BDCFC /* AboutScreenVC.swift */,
+				3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */,
 				39D22816290862370090786D /* LevelSelectorVC.swift */,
 				3997F1682908A960007BDCFC /* QuizScreenVC.swift */,
 			);
@@ -185,9 +185,9 @@
 			files = (
 				39D22817290862370090786D /* LevelSelectorVC.swift in Sources */,
 				39D22813290862370090786D /* AppDelegate.swift in Sources */,
+				3997F16B2908AC51007BDCFC /* AboutScreenVC.swift in Sources */,
 				39D2281D290862370090786D /* Quizo.xcdatamodeld in Sources */,
 				39D22815290862370090786D /* SceneDelegate.swift in Sources */,
-				3997F164290895C5007BDCFC /* AboutScreenVC.swift in Sources */,
 				3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
