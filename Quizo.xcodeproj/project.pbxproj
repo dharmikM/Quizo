@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3997F164290895C5007BDCFC /* AboutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F163290895C5007BDCFC /* AboutScreenVC.swift */; };
+		3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F1682908A960007BDCFC /* QuizScreenVC.swift */; };
 		39D22813290862370090786D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22812290862370090786D /* AppDelegate.swift */; };
 		39D22815290862370090786D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22814290862370090786D /* SceneDelegate.swift */; };
-		39D22817290862370090786D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22816290862370090786D /* ViewController.swift */; };
+		39D22817290862370090786D /* LevelSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22816290862370090786D /* LevelSelectorVC.swift */; };
 		39D2281A290862370090786D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D22818290862370090786D /* Main.storyboard */; };
 		39D2281D290862370090786D /* Quizo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39D2281B290862370090786D /* Quizo.xcdatamodeld */; };
 		39D2281F290862380090786D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D2281E290862380090786D /* Assets.xcassets */; };
 		39D22822290862380090786D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D22820290862380090786D /* LaunchScreen.storyboard */; };
+		39D2282F290863FA0090786D /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D2282A290863FA0090786D /* Comfortaa-SemiBold.ttf */; };
+		39D22830290863FA0090786D /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D2282B290863FA0090786D /* Comfortaa-Medium.ttf */; };
+		39D22831290863FA0090786D /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D2282C290863FA0090786D /* Comfortaa-Light.ttf */; };
+		39D22832290863FA0090786D /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D2282D290863FA0090786D /* Comfortaa-Regular.ttf */; };
+		39D22833290863FA0090786D /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D2282E290863FA0090786D /* Comfortaa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3997F163290895C5007BDCFC /* AboutScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreenVC.swift; sourceTree = "<group>"; };
+		3997F1682908A960007BDCFC /* QuizScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenVC.swift; sourceTree = "<group>"; };
 		39D2280F290862370090786D /* Quizo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D22812290862370090786D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D22814290862370090786D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39D22816290862370090786D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39D22816290862370090786D /* LevelSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectorVC.swift; sourceTree = "<group>"; };
 		39D22819290862370090786D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39D2281C290862370090786D /* Quizo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quizo.xcdatamodel; sourceTree = "<group>"; };
 		39D2281E290862380090786D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D22821290862380090786D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D22823290862380090786D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D2282A290863FA0090786D /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		39D2282B290863FA0090786D /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		39D2282C290863FA0090786D /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		39D2282D290863FA0090786D /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		39D2282E290863FA0090786D /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39797C66290876E6007AF066 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3997F163290895C5007BDCFC /* AboutScreenVC.swift */,
+				39D22816290862370090786D /* LevelSelectorVC.swift */,
+				3997F1682908A960007BDCFC /* QuizScreenVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		39D22806290862370090786D = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +82,29 @@
 		39D22811290862370090786D /* Quizo */ = {
 			isa = PBXGroup;
 			children = (
+				39797C66290876E6007AF066 /* Controllers */,
+				39D22829290863640090786D /* FontFiles */,
 				39D22812290862370090786D /* AppDelegate.swift */,
-				39D22814290862370090786D /* SceneDelegate.swift */,
-				39D22816290862370090786D /* ViewController.swift */,
 				39D22818290862370090786D /* Main.storyboard */,
+				39D22814290862370090786D /* SceneDelegate.swift */,
 				39D2281E290862380090786D /* Assets.xcassets */,
 				39D22820290862380090786D /* LaunchScreen.storyboard */,
 				39D22823290862380090786D /* Info.plist */,
 				39D2281B290862370090786D /* Quizo.xcdatamodeld */,
 			);
 			path = Quizo;
+			sourceTree = "<group>";
+		};
+		39D22829290863640090786D /* FontFiles */ = {
+			isa = PBXGroup;
+			children = (
+				39D2282E290863FA0090786D /* Comfortaa-Bold.ttf */,
+				39D2282C290863FA0090786D /* Comfortaa-Light.ttf */,
+				39D2282B290863FA0090786D /* Comfortaa-Medium.ttf */,
+				39D2282D290863FA0090786D /* Comfortaa-Regular.ttf */,
+				39D2282A290863FA0090786D /* Comfortaa-SemiBold.ttf */,
+			);
+			path = FontFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +165,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D22833290863FA0090786D /* Comfortaa-Bold.ttf in Resources */,
 				39D22822290862380090786D /* LaunchScreen.storyboard in Resources */,
+				39D22830290863FA0090786D /* Comfortaa-Medium.ttf in Resources */,
 				39D2281F290862380090786D /* Assets.xcassets in Resources */,
+				39D22832290863FA0090786D /* Comfortaa-Regular.ttf in Resources */,
+				39D2282F290863FA0090786D /* Comfortaa-SemiBold.ttf in Resources */,
+				39D22831290863FA0090786D /* Comfortaa-Light.ttf in Resources */,
 				39D2281A290862370090786D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D22817290862370090786D /* ViewController.swift in Sources */,
+				39D22817290862370090786D /* LevelSelectorVC.swift in Sources */,
 				39D22813290862370090786D /* AppDelegate.swift in Sources */,
 				39D2281D290862370090786D /* Quizo.xcdatamodeld in Sources */,
 				39D22815290862370090786D /* SceneDelegate.swift in Sources */,
+				3997F164290895C5007BDCFC /* AboutScreenVC.swift in Sources */,
+				3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,11 +337,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quizo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Quizo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +351,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dharmikm.Quizo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,11 +369,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quizo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Quizo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +383,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dharmikm.Quizo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
