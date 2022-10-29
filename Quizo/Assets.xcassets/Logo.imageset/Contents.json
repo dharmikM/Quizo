@@ -1,10 +1,11 @@
 {
   "images" : [
     {
+      "idiom" : "universal"
+    },
+    {
       "filename" : "Quizo-logo.png",
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "idiom" : "iphone"
     }
   ],
   "info" : {

@@ -13,6 +13,10 @@ class LevelSelectorVC: UIViewController {
     //------------
     @IBOutlet weak var quizLevelText: UILabel!
     
+    //MARK: Properties
+    //------------
+    private var levelSelected = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,28 +31,54 @@ class LevelSelectorVC: UIViewController {
     //------------
 
     @IBAction func easyButton(_ sender: Any) {
-        print("easy button")
+        levelSelected = "easy"
+
+        guard let toProgressScreen = storyboard?.instantiateViewController(withIdentifier: "QuizLoadingScreenVC") as? QuizLoadingScreenVC else {
+            print("Quiz Loading screen is not found")
+            return
+
+        }
+
+        self.navigationController?.pushViewController(toProgressScreen, animated: true)
+        toProgressScreen.selectedDifficulty = levelSelected
 
         
     }
     
     
     @IBAction func mediumButtton(_ sender: Any) {
-        print("medium button")
+        levelSelected = "medium"
+        
+        guard let toProgressScreen = storyboard?.instantiateViewController(withIdentifier: "QuizLoadingScreenVC") as? QuizLoadingScreenVC else {
+            print("Quiz Loading screen is not found")
+            return
+
+        }
+
+        self.navigationController?.pushViewController(toProgressScreen, animated: true)
+        toProgressScreen.selectedDifficulty = levelSelected
 
     }
     
     
     @IBAction func hardButton(_ sender: Any) {
-        print("hard button")
+        levelSelected = "hard"
+        
+        guard let toProgressScreen = storyboard?.instantiateViewController(withIdentifier: "QuizLoadingScreenVC") as? QuizLoadingScreenVC else {
+            print("Quiz Loading screen is not found")
+            return
+
+        }
+
+        self.navigationController?.pushViewController(toProgressScreen, animated: true)
+        toProgressScreen.selectedDifficulty = levelSelected
+
 
     }
     
     
     @IBAction func infoButton(_ sender: Any) {
-        print("info button")
 
-        
         guard let toAboutScreen = storyboard?.instantiateViewController(withIdentifier: "aboutScreenVC") else {
             print("About screen is not found")
             return

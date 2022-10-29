@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F1682908A960007BDCFC /* QuizScreenVC.swift */; };
 		3997F16B2908AC51007BDCFC /* AboutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */; };
+		39B772002908F3A900D9099D /* QuestionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B771FF2908F3A900D9099D /* QuestionFetcher.swift */; };
+		39B772032908F3CE00D9099D /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B772022908F3CE00D9099D /* Questions.swift */; };
+		39CB1A34290B4336004383C5 /* QuizLoadingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB1A33290B4336004383C5 /* QuizLoadingScreenVC.swift */; };
+		39CB1A36290B5DFF004383C5 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB1A35290B5DFF004383C5 /* DBHelper.swift */; };
 		39D22813290862370090786D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22812290862370090786D /* AppDelegate.swift */; };
 		39D22815290862370090786D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22814290862370090786D /* SceneDelegate.swift */; };
 		39D22817290862370090786D /* LevelSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22816290862370090786D /* LevelSelectorVC.swift */; };
@@ -26,6 +30,10 @@
 /* Begin PBXFileReference section */
 		3997F1682908A960007BDCFC /* QuizScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenVC.swift; sourceTree = "<group>"; };
 		3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutScreenVC.swift; sourceTree = "<group>"; };
+		39B771FF2908F3A900D9099D /* QuestionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFetcher.swift; sourceTree = "<group>"; };
+		39B772022908F3CE00D9099D /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		39CB1A33290B4336004383C5 /* QuizLoadingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLoadingScreenVC.swift; sourceTree = "<group>"; };
+		39CB1A35290B5DFF004383C5 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		39D2280F290862370090786D /* Quizo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D22812290862370090786D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D22814290862370090786D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +67,54 @@
 				3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */,
 				39D22816290862370090786D /* LevelSelectorVC.swift */,
 				3997F1682908A960007BDCFC /* QuizScreenVC.swift */,
+				39CB1A33290B4336004383C5 /* QuizLoadingScreenVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		39B772012908F3BC00D9099D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39B772022908F3CE00D9099D /* Questions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39B772042908F3D700D9099D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				39D22812290862370090786D /* AppDelegate.swift */,
+				39D22814290862370090786D /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		39B772052908F3EA00D9099D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39D22820290862380090786D /* LaunchScreen.storyboard */,
+				39D22818290862370090786D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39B772062908F41A00D9099D /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				39B771FF2908F3A900D9099D /* QuestionFetcher.swift */,
+				39CB1A35290B5DFF004383C5 /* DBHelper.swift */,
+			);
+			path = HelperFiles;
+			sourceTree = "<group>";
+		};
+		39B772072908F42B00D9099D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				39D22829290863640090786D /* FontFiles */,
+				39B772012908F3BC00D9099D /* Model */,
+				39B772062908F41A00D9099D /* HelperFiles */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		39D22806290862370090786D = {
@@ -82,13 +136,11 @@
 		39D22811290862370090786D /* Quizo */ = {
 			isa = PBXGroup;
 			children = (
+				39B772072908F42B00D9099D /* Helpers */,
+				39B772052908F3EA00D9099D /* Views */,
+				39B772042908F3D700D9099D /* Delegate */,
 				39797C66290876E6007AF066 /* Controllers */,
-				39D22829290863640090786D /* FontFiles */,
-				39D22812290862370090786D /* AppDelegate.swift */,
-				39D22818290862370090786D /* Main.storyboard */,
-				39D22814290862370090786D /* SceneDelegate.swift */,
 				39D2281E290862380090786D /* Assets.xcassets */,
-				39D22820290862380090786D /* LaunchScreen.storyboard */,
 				39D22823290862380090786D /* Info.plist */,
 				39D2281B290862370090786D /* Quizo.xcdatamodeld */,
 			);
@@ -183,10 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CB1A34290B4336004383C5 /* QuizLoadingScreenVC.swift in Sources */,
 				39D22817290862370090786D /* LevelSelectorVC.swift in Sources */,
+				39B772002908F3A900D9099D /* QuestionFetcher.swift in Sources */,
 				39D22813290862370090786D /* AppDelegate.swift in Sources */,
 				3997F16B2908AC51007BDCFC /* AboutScreenVC.swift in Sources */,
 				39D2281D290862370090786D /* Quizo.xcdatamodeld in Sources */,
+				39B772032908F3CE00D9099D /* Questions.swift in Sources */,
+				39CB1A36290B5DFF004383C5 /* DBHelper.swift in Sources */,
 				39D22815290862370090786D /* SceneDelegate.swift in Sources */,
 				3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */,
 			);
@@ -333,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DWHPHM5ALD;
@@ -344,7 +401,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DWHPHM5ALD;
@@ -377,7 +435,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

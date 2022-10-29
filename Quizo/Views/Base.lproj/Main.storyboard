@@ -123,22 +123,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="AppColor"/>
                         <constraints>
-                            <constraint firstItem="bSA-mS-VvH" firstAttribute="trailing" secondItem="OtU-B5-JtR" secondAttribute="trailing" id="0vz-P4-lUN"/>
-                            <constraint firstItem="bSA-mS-VvH" firstAttribute="leading" secondItem="OtU-B5-JtR" secondAttribute="leading" id="4IV-yp-JCx"/>
+                            <constraint firstItem="OtU-B5-JtR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="3dR-EI-bU2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v2G-GD-Fa9" secondAttribute="bottom" constant="446" id="4ZR-ba-KdX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bSA-mS-VvH" secondAttribute="bottom" constant="352" id="Cmg-jG-fDk"/>
                             <constraint firstItem="cfN-uG-Xd5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="641" id="G2n-ep-b27"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LrQ-vT-jsY" secondAttribute="bottom" constant="538" id="Gbd-oW-Ewf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OtU-B5-JtR" secondAttribute="bottom" constant="265" id="HdL-yl-jRS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrQ-vT-jsY" secondAttribute="trailing" constant="53" id="K3f-pF-Uzx"/>
                             <constraint firstItem="cfN-uG-Xd5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KTP-z5-hZ9"/>
                             <constraint firstItem="v2G-GD-Fa9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Nor-Ym-hYi"/>
+                            <constraint firstItem="OtU-B5-JtR" firstAttribute="top" secondItem="bSA-mS-VvH" secondAttribute="bottom" constant="38" id="P7G-Zn-4Rt"/>
                             <constraint firstItem="LrQ-vT-jsY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="QlH-7B-GzJ"/>
-                            <constraint firstItem="OtU-B5-JtR" firstAttribute="top" secondItem="bSA-mS-VvH" secondAttribute="bottom" constant="38" id="Wzg-RF-OZO"/>
+                            <constraint firstItem="bSA-mS-VvH" firstAttribute="top" secondItem="v2G-GD-Fa9" secondAttribute="bottom" constant="45" id="UqL-mu-5HY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bSA-mS-VvH" secondAttribute="trailing" constant="65" id="aTy-MM-g8O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OtU-B5-JtR" secondAttribute="trailing" constant="65" id="bdz-fs-yBB"/>
                             <constraint firstItem="v2G-GD-Fa9" firstAttribute="top" secondItem="LrQ-vT-jsY" secondAttribute="bottom" constant="40" id="eiC-Oh-Ec1"/>
                             <constraint firstItem="cfN-uG-Xd5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="342" id="gNL-VK-nwB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OtU-B5-JtR" secondAttribute="bottom" constant="265" id="gYj-LT-ZuC"/>
                             <constraint firstItem="LrQ-vT-jsY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="hZ9-XB-4w5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OtU-B5-JtR" secondAttribute="trailing" constant="65" id="jSt-mC-yHT"/>
-                            <constraint firstItem="OtU-B5-JtR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="jny-Xy-C1f"/>
+                            <constraint firstItem="bSA-mS-VvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="ivP-Zx-qkn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v2G-GD-Fa9" secondAttribute="trailing" constant="65" id="su4-fU-Fh8"/>
                         </constraints>
                     </view>
@@ -150,6 +152,135 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2927.6923076923076" y="-2.1327014218009479"/>
+        </scene>
+        <!--Quiz Loading ScreenVC-->
+        <scene sceneID="Eie-1F-RLF">
+            <objects>
+                <viewController storyboardIdentifier="QuizLoadingScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QUF-0c-FNd" customClass="QuizLoadingScreenVC" customModule="Quizo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZTo-cb-mUl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-9d-DyF">
+                                <rect key="frame" x="48" y="248" width="294" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="QCw-i9-fY8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Please wait we are loading some great questions for you  ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Comfortaa-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="🚧🛠️">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="AppleColorEmoji"/>
+                                            <font key="NSOriginalFont" size="17" name="Comfortaa-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dHF-c1-1vl">
+                                <rect key="frame" x="117" y="397" width="157" height="34"/>
+                                <color key="color" name="LightGreenColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dcI-5C-n4i"/>
+                        <color key="backgroundColor" name="AppColor"/>
+                        <constraints>
+                            <constraint firstItem="dcI-5C-n4i" firstAttribute="bottom" secondItem="dHF-c1-1vl" secondAttribute="bottom" constant="379" id="7mK-jh-xXU"/>
+                            <constraint firstItem="dHF-c1-1vl" firstAttribute="leading" secondItem="dcI-5C-n4i" secondAttribute="leading" constant="117" id="UJp-i6-vVm"/>
+                            <constraint firstItem="lgq-9d-DyF" firstAttribute="top" secondItem="dcI-5C-n4i" secondAttribute="top" constant="201" id="f3t-g1-RRL"/>
+                            <constraint firstItem="lgq-9d-DyF" firstAttribute="leading" secondItem="dcI-5C-n4i" secondAttribute="leading" constant="48" id="h5e-zc-9BR"/>
+                            <constraint firstItem="dcI-5C-n4i" firstAttribute="trailing" secondItem="lgq-9d-DyF" secondAttribute="trailing" constant="48" id="mGP-gA-Ti1"/>
+                            <constraint firstItem="dcI-5C-n4i" firstAttribute="trailing" secondItem="dHF-c1-1vl" secondAttribute="trailing" constant="116" id="mPx-Fc-Keo"/>
+                            <constraint firstItem="dHF-c1-1vl" firstAttribute="top" secondItem="lgq-9d-DyF" secondAttribute="bottom" constant="69" id="oYG-dv-sTL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingAnimation" destination="dHF-c1-1vl" id="arn-xt-sPM"/>
+                        <outlet property="loadingText" destination="lgq-9d-DyF" id="YOC-3s-K8S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0FQ-5S-0gF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3950.7692307692305" y="-2.1327014218009479"/>
+        </scene>
+        <!--Quiz ScreenVC-->
+        <scene sceneID="8MM-yM-oqe">
+            <objects>
+                <viewController storyboardIdentifier="QuizScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3eI-mN-B5W" customClass="QuizScreenVC" customModule="Quizo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4f-cB-f1x">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdo-pS-Qx4">
+                                <rect key="frame" x="16.000000000000007" y="78" width="102.66666666666669" height="23.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Question: 1">
+                                        <attributes>
+                                            <color key="NSColor" name="LightGreenColor"/>
+                                            <font key="NSFont" size="20" name="Comfortaa-SemiBold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-bZ-aQ5">
+                                <rect key="frame" x="16.000000000000007" y="307.66666666666669" width="102.66666666666669" height="23.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Options:">
+                                        <attributes>
+                                            <color key="NSColor" name="LightGreenColor"/>
+                                            <font key="NSFont" size="20" name="Comfortaa-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-AS-Nyx">
+                                <rect key="frame" x="16" y="123.33333333333333" width="358" height="174.66666666666669"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="According to the International System of Units, how many bytes are in a kilobyte of RAM?">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="23" name="Comfortaa-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kEz-18-CiV"/>
+                        <color key="backgroundColor" name="AppColor"/>
+                        <constraints>
+                            <constraint firstItem="kEz-18-CiV" firstAttribute="trailing" secondItem="dz4-AS-Nyx" secondAttribute="trailing" constant="16" id="0V6-14-NYL"/>
+                            <constraint firstItem="lmk-bZ-aQ5" firstAttribute="top" secondItem="dz4-AS-Nyx" secondAttribute="bottom" constant="9.6699999999999999" id="1Kp-SA-CvE"/>
+                            <constraint firstItem="Rdo-pS-Qx4" firstAttribute="leading" secondItem="kEz-18-CiV" secondAttribute="leading" constant="16" id="24l-St-9tQ"/>
+                            <constraint firstItem="lmk-bZ-aQ5" firstAttribute="leading" secondItem="kEz-18-CiV" secondAttribute="leading" constant="16" id="2J6-kO-FgU"/>
+                            <constraint firstItem="Rdo-pS-Qx4" firstAttribute="top" secondItem="kEz-18-CiV" secondAttribute="top" constant="31" id="6An-TC-lW1"/>
+                            <constraint firstItem="kEz-18-CiV" firstAttribute="bottom" secondItem="dz4-AS-Nyx" secondAttribute="bottom" constant="512" id="9PS-Sl-DM5"/>
+                            <constraint firstItem="dz4-AS-Nyx" firstAttribute="leading" secondItem="kEz-18-CiV" secondAttribute="leading" constant="16" id="Ghx-QT-nJR"/>
+                            <constraint firstItem="kEz-18-CiV" firstAttribute="trailing" secondItem="Rdo-pS-Qx4" secondAttribute="trailing" constant="271.32999999999998" id="Loe-3x-WJm"/>
+                            <constraint firstItem="dz4-AS-Nyx" firstAttribute="top" secondItem="Rdo-pS-Qx4" secondAttribute="bottom" constant="22" id="Rla-HW-P38"/>
+                            <constraint firstItem="kEz-18-CiV" firstAttribute="trailing" secondItem="lmk-bZ-aQ5" secondAttribute="trailing" constant="271.32999999999998" id="f0K-YO-FGg"/>
+                            <constraint firstItem="kEz-18-CiV" firstAttribute="bottom" secondItem="lmk-bZ-aQ5" secondAttribute="bottom" constant="479" id="fea-W1-4tV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7kl-Nc-NEm"/>
+                    <connections>
+                        <outlet property="questionText" destination="dz4-AS-Nyx" id="XR7-GI-ws9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwY-2b-KnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5061.538461538461" y="-2.1327014218009479"/>
         </scene>
         <!--About ScreenVC-->
         <scene sceneID="Jmy-Ul-gqP">
@@ -284,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhL-fs-Kbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4698.4615384615381" y="640.52132701421795"/>
+            <point key="canvasLocation" x="3620" y="730"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lRr-hM-0Kx">
@@ -311,7 +442,7 @@
             <color red="0.13699999451637268" green="0.14900000393390656" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="GreenColor">
-            <color red="0.31372550129999999" green="0.4588235021" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31400001049041748" green="0.45899999141693115" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="LightGreenColor">
             <color red="0.60392159219999997" green="0.74509805439999999" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
