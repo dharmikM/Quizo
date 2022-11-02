@@ -272,9 +272,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Easy">
                                                     <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <font key="NSFont" size="16" name="Comfortaa-Bold"/>
-                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -359,7 +357,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2N-cJ-JFg">
-                                        <rect key="frame" x="21" y="638" width="158" height="51"/>
+                                        <rect key="frame" x="34" y="638" width="158" height="51"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
@@ -381,7 +379,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFA-7j-ePM">
-                                        <rect key="frame" x="195" y="638" width="158" height="51"/>
+                                        <rect key="frame" x="209" y="638" width="158" height="51"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
@@ -409,7 +407,7 @@
                                     <constraint firstItem="qVN-JJ-gnY" firstAttribute="leading" secondItem="pgo-YC-Cza" secondAttribute="trailing" constant="41" id="1k1-rg-qeb"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="I6b-sq-LmK" secondAttribute="trailing" constant="215" id="54H-sS-Ehw"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="RFA-7j-ePM" secondAttribute="bottom" constant="48" id="5Yk-A2-amj"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="X2N-cJ-JFg" secondAttribute="trailing" constant="211" id="5ip-lz-IKi"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="X2N-cJ-JFg" secondAttribute="trailing" constant="198" id="5ip-lz-IKi"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="qVN-JJ-gnY" secondAttribute="trailing" constant="43" id="5zc-8t-TCy"/>
                                     <constraint firstItem="X2N-cJ-JFg" firstAttribute="top" secondItem="WKT-yC-xFQ" secondAttribute="bottom" constant="39" id="8bd-jL-Uhu"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="qVN-JJ-gnY" secondAttribute="bottom" constant="317" id="BFg-VP-AmP"/>
@@ -419,12 +417,12 @@
                                     <constraint firstItem="zcF-ga-rbn" firstAttribute="leading" secondItem="I6b-sq-LmK" secondAttribute="trailing" constant="41" id="K9T-mI-xOh"/>
                                     <constraint firstItem="zcF-ga-rbn" firstAttribute="top" secondItem="qVN-JJ-gnY" secondAttribute="bottom" constant="19" id="KMV-ba-Wuu"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="X2N-cJ-JFg" secondAttribute="bottom" constant="48" id="Lxg-1c-xxj"/>
-                                    <constraint firstItem="RFA-7j-ePM" firstAttribute="leading" secondItem="X2N-cJ-JFg" secondAttribute="trailing" constant="16" id="Mp7-UU-Uld"/>
+                                    <constraint firstItem="RFA-7j-ePM" firstAttribute="leading" secondItem="X2N-cJ-JFg" secondAttribute="trailing" constant="17" id="Mp7-UU-Uld"/>
                                     <constraint firstItem="Rer-xc-kKw" firstAttribute="top" secondItem="pRJ-zT-eR0" secondAttribute="bottom" constant="20" id="NWN-VZ-kW2"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="pgo-YC-Cza" secondAttribute="trailing" constant="215" id="OqZ-QW-88j"/>
                                     <constraint firstItem="WKT-yC-xFQ" firstAttribute="top" secondItem="I6b-sq-LmK" secondAttribute="bottom" constant="16" id="P3F-Xc-Z4z"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="pgo-YC-Cza" secondAttribute="bottom" constant="317" id="TYc-g4-bte"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="RFA-7j-ePM" secondAttribute="trailing" constant="37" id="USe-dm-JWd"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="RFA-7j-ePM" secondAttribute="trailing" constant="23" id="USe-dm-JWd"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="I6b-sq-LmK" secondAttribute="bottom" constant="248" id="VAP-EE-Moz"/>
                                     <constraint firstItem="pRJ-zT-eR0" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="Wof-zr-zkJ"/>
                                     <constraint firstItem="I6b-sq-LmK" firstAttribute="top" secondItem="pgo-YC-Cza" secondAttribute="bottom" constant="19" id="Z5c-aK-VEE"/>
@@ -435,7 +433,7 @@
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="Rer-xc-kKw" secondAttribute="trailing" constant="8" id="gbr-qP-hOJ"/>
                                     <constraint firstItem="1qw-Kt-mf6" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="17" id="lhs-gi-tYY"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="pRJ-zT-eR0" secondAttribute="bottom" constant="685" id="loz-Dz-ChJ"/>
-                                    <constraint firstItem="X2N-cJ-JFg" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="mHI-zu-0Ri"/>
+                                    <constraint firstItem="X2N-cJ-JFg" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="34" id="mHI-zu-0Ri"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="WKT-yC-xFQ" secondAttribute="trailing" constant="43" id="neA-lX-aeS"/>
                                     <constraint firstItem="pgo-YC-Cza" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="44" id="peh-G4-ri6"/>
                                     <constraint firstItem="pRJ-zT-eR0" firstAttribute="top" secondItem="rV4-30-zDg" secondAttribute="top" constant="8" id="r2Y-kh-Odm"/>
@@ -466,6 +464,132 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwY-2b-KnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5060" y="-2.1327014218009479"/>
+        </scene>
+        <!--Score ScreenVC-->
+        <scene sceneID="mJ5-2Z-GQc">
+            <objects>
+                <viewController storyboardIdentifier="ScoreScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BXT-LQ-4h3" customClass="ScoreScreenVC" customModule="Quizo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfF-Gd-boa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cot-iz-X5r">
+                                <rect key="frame" x="0.0" y="47" width="390" height="745"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scoreBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vFB-h1-syd">
+                                        <rect key="frame" x="8" y="10" width="374" height="541"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1k-Yq-qeB">
+                                        <rect key="frame" x="48" y="42" width="294" height="54"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Better Luck Next Time">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Comfortaa-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-18-bMI">
+                                        <rect key="frame" x="48" y="150" width="294" height="164"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="🎉">
+                                                <attributes>
+                                                    <font key="NSFont" size="150" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-Om-wkO">
+                                        <rect key="frame" x="48" y="424" width="294" height="83"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="48"/>
+                                        <color key="textColor" name="LightGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLh-Mq-wA3">
+                                        <rect key="frame" x="48" y="362" width="294" height="54"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Final Score">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="Comfortaa-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-aw-3lE">
+                                        <rect key="frame" x="26" y="608" width="339" height="51"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
+                                                <color key="backgroundColor" name="LightGreenColor"/>
+                                                <color key="strokeColor" name="GreenColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Home">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="30" name="Comfortaa-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="homeButton:" destination="BXT-LQ-4h3" eventType="touchUpInside" id="bG0-26-GCa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wez-aw-3lE" firstAttribute="top" secondItem="rUr-Om-wkO" secondAttribute="bottom" constant="101" id="2u4-9N-hFb"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="trailing" secondItem="vFB-h1-syd" secondAttribute="trailing" constant="8" id="3P6-BI-YUI"/>
+                                    <constraint firstItem="g1k-Yq-qeB" firstAttribute="leading" secondItem="svc-dt-hiV" secondAttribute="leading" constant="48" id="465-Zr-37t"/>
+                                    <constraint firstItem="rUr-Om-wkO" firstAttribute="top" secondItem="gLh-Mq-wA3" secondAttribute="bottom" constant="8" symbolic="YES" id="AO3-cM-ODE"/>
+                                    <constraint firstItem="vFB-h1-syd" firstAttribute="leading" secondItem="svc-dt-hiV" secondAttribute="leading" constant="8" id="Bg0-Ra-j6d"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="bottom" secondItem="Wez-aw-3lE" secondAttribute="bottom" constant="86" id="Bsy-mW-927"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="bottom" secondItem="gLh-Mq-wA3" secondAttribute="bottom" constant="329" id="Iyw-9W-WWE"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="bottom" secondItem="g1k-Yq-qeB" secondAttribute="bottom" constant="649" id="Ju7-2f-WgG"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="trailing" secondItem="Wez-aw-3lE" secondAttribute="trailing" constant="25" id="LPT-ag-YxS"/>
+                                    <constraint firstItem="gLh-Mq-wA3" firstAttribute="top" secondItem="GaZ-18-bMI" secondAttribute="bottom" constant="48" id="OCf-J9-NWT"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="trailing" secondItem="rUr-Om-wkO" secondAttribute="trailing" constant="48" id="QaA-qf-cgh"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="bottom" secondItem="GaZ-18-bMI" secondAttribute="bottom" constant="431" id="SLU-Je-Giq"/>
+                                    <constraint firstItem="Wez-aw-3lE" firstAttribute="leading" secondItem="svc-dt-hiV" secondAttribute="leading" constant="26" id="Xn8-jk-hWs"/>
+                                    <constraint firstItem="vFB-h1-syd" firstAttribute="top" secondItem="svc-dt-hiV" secondAttribute="top" constant="10" id="ZyT-O6-jPG"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="trailing" secondItem="gLh-Mq-wA3" secondAttribute="trailing" constant="48" id="cnH-P4-V6a"/>
+                                    <constraint firstItem="gLh-Mq-wA3" firstAttribute="leading" secondItem="svc-dt-hiV" secondAttribute="leading" constant="48" id="eWb-ep-PW5"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="trailing" secondItem="g1k-Yq-qeB" secondAttribute="trailing" constant="48" id="gB5-fR-5Is"/>
+                                    <constraint firstItem="GaZ-18-bMI" firstAttribute="leading" secondItem="svc-dt-hiV" secondAttribute="leading" constant="48" id="h0w-m0-SJk"/>
+                                    <constraint firstItem="g1k-Yq-qeB" firstAttribute="top" secondItem="svc-dt-hiV" secondAttribute="top" constant="42" id="jMk-F9-TYC"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="bottom" secondItem="rUr-Om-wkO" secondAttribute="bottom" constant="238" id="ouh-eh-B5j"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="trailing" secondItem="GaZ-18-bMI" secondAttribute="trailing" constant="48" id="pc4-7a-1jx"/>
+                                    <constraint firstItem="svc-dt-hiV" firstAttribute="bottom" secondItem="vFB-h1-syd" secondAttribute="bottom" constant="194" id="r5L-SJ-e6y"/>
+                                    <constraint firstItem="rUr-Om-wkO" firstAttribute="leading" secondItem="svc-dt-hiV" secondAttribute="leading" constant="48" id="vUI-HI-xVu"/>
+                                    <constraint firstItem="GaZ-18-bMI" firstAttribute="top" secondItem="g1k-Yq-qeB" secondAttribute="bottom" constant="54" id="zOK-Pw-WiP"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Jvm-3k-99T"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="svc-dt-hiV"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Hg-3X-pVN"/>
+                        <color key="backgroundColor" name="AppColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="emojiShowText" destination="GaZ-18-bMI" id="rsP-CC-Kep"/>
+                        <outlet property="finalScoreShowText" destination="rUr-Om-wkO" id="0sV-AV-gZD"/>
+                        <outlet property="headerMessageText" destination="g1k-Yq-qeB" id="Ij1-6c-sVG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLa-Dn-uEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5933.8461538461534" y="-2.1327014218009479"/>
         </scene>
         <!--About ScreenVC-->
         <scene sceneID="Jmy-Ul-gqP">
@@ -623,6 +747,7 @@
     </scenes>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
+        <image name="scoreBackground" width="392" height="574"/>
         <namedColor name="AppColor">
             <color red="0.13699999451637268" green="0.14900000393390656" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

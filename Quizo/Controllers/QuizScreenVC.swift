@@ -26,6 +26,7 @@ class QuizScreenVC: UIViewController {
     private var questionNo = 0
     private var correctAnswer = ""
     private var selectedOption = ""
+    var userScore = 0
     private var incorrectAnswerArray = [String]()
     
 
@@ -49,13 +50,14 @@ class QuizScreenVC: UIViewController {
             let gameAlert = UIAlertController(title: "Thank You!", message: "Great work!, let's head to score page", preferredStyle: UIAlertController.Style.alert)
             
             gameAlert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: {_ in
-                guard let toLevelSelectorScreen = self.storyboard?.instantiateViewController(withIdentifier: "LevelSelectorVC") as? LevelSelectorVC else {
-                    print("Level Selector screen is not found")
+                guard let toScoreScreen = self.storyboard?.instantiateViewController(withIdentifier: "ScoreScreenVC") as? ScoreScreenVC else {
+                    print("Score screen is not found")
                     return
         
                 }
         
-                self.navigationController?.pushViewController(toLevelSelectorScreen, animated: true)
+                self.navigationController?.pushViewController(toScoreScreen, animated: true)
+                toScoreScreen.userScore = self.userScore
             }))
             self.present(gameAlert, animated: true, completion: nil)
         }
@@ -63,8 +65,6 @@ class QuizScreenVC: UIViewController {
             if let currentQuestionData = recievedQuestions.first(where: {$0.questionID == questionNo}){
                 questionNumberText.text = "Question: \(currentQuestionData.questionID)"
                 questionText.text = "\(currentQuestionData.question!)"
-                print(currentQuestionData.correctAnswer)
-                print(currentQuestionData.incorrectAnswers)
                 correctAnswer = currentQuestionData.correctAnswer!
                 let randomNumber = Int.random(in: 1...4)
                 
@@ -118,6 +118,7 @@ class QuizScreenVC: UIViewController {
                 errorMessageText.text = "Selected Answer is Correct!! 🎉"
                 errorMessageText.textColor = UIColor(named: "LightGreenColor")
                 selectedOption = ""
+                userScore += 1
             }
             else{
                 errorMessageText.text = "Selected Answer is Incorrect!! "

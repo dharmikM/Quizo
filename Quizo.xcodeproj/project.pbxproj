@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395EBEC02912517A006D191D /* ScoreScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EBEBF2912517A006D191D /* ScoreScreenVC.swift */; };
 		3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F1682908A960007BDCFC /* QuizScreenVC.swift */; };
 		3997F16B2908AC51007BDCFC /* AboutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */; };
 		39B772002908F3A900D9099D /* QuestionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B771FF2908F3A900D9099D /* QuestionFetcher.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		395EBEBF2912517A006D191D /* ScoreScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreScreenVC.swift; sourceTree = "<group>"; };
 		3997F1682908A960007BDCFC /* QuizScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenVC.swift; sourceTree = "<group>"; };
 		3997F16A2908AC51007BDCFC /* AboutScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutScreenVC.swift; sourceTree = "<group>"; };
 		39B771FF2908F3A900D9099D /* QuestionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFetcher.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				39D22816290862370090786D /* LevelSelectorVC.swift */,
 				3997F1682908A960007BDCFC /* QuizScreenVC.swift */,
 				39CB1A33290B4336004383C5 /* QuizLoadingScreenVC.swift */,
+				395EBEBF2912517A006D191D /* ScoreScreenVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				39B772032908F3CE00D9099D /* Questions.swift in Sources */,
 				39CB1A36290B5DFF004383C5 /* DBHelper.swift in Sources */,
 				39D22815290862370090786D /* SceneDelegate.swift in Sources */,
+				395EBEC02912517A006D191D /* ScoreScreenVC.swift in Sources */,
 				3997F1692908A960007BDCFC /* QuizScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
