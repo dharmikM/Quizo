@@ -15,7 +15,7 @@ class QuizLoadingScreenVC: UIViewController {
     @IBOutlet weak var loadingAnimation: UIActivityIndicatorView!
     @IBOutlet weak var loadingText: UILabel!
     
-    //MARK: Outlets
+    //MARK: Properties
     //------------
     private var counter = Timer()
     private var progressCounter:Float = 0.0
@@ -24,6 +24,7 @@ class QuizLoadingScreenVC: UIViewController {
     var selectedDifficulty = ""
     private var cancellables : Set<AnyCancellable> = []
     private var databaseHelper = DBHelper.getInstance()
+    private var questionCount = 0
 
     
     private func getQuestionsData(){
@@ -38,11 +39,12 @@ class QuizLoadingScreenVC: UIViewController {
     
     private func storeQuestionCoreData(){
         for quizData in recievedQuestions {
+            questionCount += 1
             let question = quizData.question
             let correctAnswer = quizData.correct_answer
             let incorrectAnswers = quizData.incorrect_answers
             
-            databaseHelper.insertQuestionsData(question: question, correctAnswer: correctAnswer, incorrectAnswers: incorrectAnswers)
+            databaseHelper.insertQuestionsData(questionID: Int64(questionCount), question: question, correctAnswer: correctAnswer, incorrectAnswers: incorrectAnswers)
         }
         
     }
@@ -53,8 +55,10 @@ class QuizLoadingScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        self.databaseHelper.deleteQuestionData()
         self.questionFetcher.getQuestionFromAPI(userSelectedLevel: self.selectedDifficulty)
         getQuestionsData()
+        
         
         counter = Timer.scheduledTimer(withTimeInterval: 0.08, repeats: true, block: { (counter) in
             self.progressCounter += 0.01

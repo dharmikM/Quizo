@@ -19,7 +19,7 @@ class LevelSelectorVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.hidesBackButton = true
         quizLevelText.center = view.center
         quizLevelText.font = UIFont(name: "Comfortaa-Bold", size: 42)
         

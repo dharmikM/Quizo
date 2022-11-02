@@ -31,14 +31,15 @@ class DBHelper {
     }
     
     
-    func insertQuestionsData(question:String,correctAnswer:String, incorrectAnswers:[String]){
+    func insertQuestionsData(questionID:Int64,question:String,correctAnswer:String, incorrectAnswers:[String]){
         do{
             
             let questionsData = NSEntityDescription.insertNewObject(forEntityName: "QuestionList", into: self.managedObjContext) as! QuestionList
             
+            questionsData.questionID = questionID
             questionsData.question = question
             questionsData.correctAnswer = correctAnswer
-            questionsData.incorrectAnswers = incorrectAnswers as NSObject
+            questionsData.incorrectAnswers = incorrectAnswers
             
             
             if self.managedObjContext.hasChanges{
@@ -57,8 +58,8 @@ class DBHelper {
         do{
             
             let listOfQuestions = try self.managedObjContext.fetch(fetchRequest)
-            print("Fetched Data: \(listOfQuestions as [QuestionList])")
-            
+            print("Fetched Data: \(listOfQuestions as [QuestionList] )")
+            return listOfQuestions as [QuestionList]
         }catch let error as NSError{
             print("Could not fetch the data \(error)")
         }
@@ -67,5 +68,15 @@ class DBHelper {
     }
     
     func deleteQuestionData(){
+        
+
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "QuestionList")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try self.managedObjContext.execute(deleteRequest)
+        } catch let error as NSError {
+            print("Could not delete the data \(error)")
+        }
     }
 }
