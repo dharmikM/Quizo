@@ -23,7 +23,7 @@ Design was done in Figma
 
 ![AllScreen](https://dharmikm.com/quizo-images/quizo-all-screen.png)
 
-##Licences and Attribution
+## Licences and Attribution
 
 API : Open Database Trivia  
 
