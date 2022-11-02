@@ -3,6 +3,15 @@
 **Description: It's an quiz app that makes your experience of giving a quiz more fun and interesting.The application is natively build on iOS and using it rich functionality.**
 
 
+## Technology
+Language : Swift  
+
+Library or funtionality: CoreData, UIKit,Api Data fetching  
+
+Design: Figma 
+
+
+
 ## Design
 
 Design was done in Figma 
@@ -16,8 +25,9 @@ Design was done in Figma
 
 ##Licences and Attribution
 
-API : Open Database Trivia
-,Fonts and Icon : Google Fonts
+API : Open Database Trivia  
+
+Fonts and Icon : Google Fonts
 
 
 
