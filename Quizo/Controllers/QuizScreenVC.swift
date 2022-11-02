@@ -27,7 +27,6 @@ class QuizScreenVC: UIViewController {
     private var correctAnswer = ""
     private var selectedOption = ""
     var userScore = 0
-    private var incorrectAnswerArray = [String]()
     
 
     
@@ -35,10 +34,6 @@ class QuizScreenVC: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         recievedQuestions.append(contentsOf: databaseHelper.getAllQuestionData()!)
-        for question in recievedQuestions {
-            print(question.question!)
-            incorrectAnswerArray.append(contentsOf: question.incorrectAnswers!)
-        }
         self.questionList()
         
     }
@@ -138,7 +133,6 @@ class QuizScreenVC: UIViewController {
     //------------
     
     @IBAction func optionOneButton(_ sender: Any) {
-        print(optionOneText.currentTitle!)
         selectedOption = "\(optionOneText.currentTitle!)"
         self.answerCheck(answerSelected: optionOneText.currentTitle!)
     }

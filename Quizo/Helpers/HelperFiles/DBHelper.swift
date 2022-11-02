@@ -44,7 +44,7 @@ class DBHelper {
             
             if self.managedObjContext.hasChanges{
                 try self.managedObjContext.save()
-                print("Data stored successfully")
+//                print("Data stored successfully")
             }
             
         }catch let error as NSError{
@@ -58,7 +58,7 @@ class DBHelper {
         do{
             
             let listOfQuestions = try self.managedObjContext.fetch(fetchRequest)
-            print("Fetched Data: \(listOfQuestions as [QuestionList] )")
+//            print("Fetched Data: \(listOfQuestions as [QuestionList] )")
             return listOfQuestions as [QuestionList]
         }catch let error as NSError{
             print("Could not fetch the data \(error)")

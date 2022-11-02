@@ -47,7 +47,6 @@ class QuestionFetcher: ObservableObject{
                             do{
                                 if(data != nil){
                                     if let jsonData = data{
-                                        print("Received Data is \(jsonData)")
                                         
                                         let decoder = JSONDecoder()
                                         
@@ -56,7 +55,6 @@ class QuestionFetcher: ObservableObject{
                                         
                                             DispatchQueue.main.async {
                                                 self.questionList = decodedQuestionListResults
-                                                print(#function,"Data from API \n \(decodedQuestionListResults)\n")
                                             }
                                             
                                     }
