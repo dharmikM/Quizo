@@ -49,12 +49,7 @@ class QuizLoadingScreenVC: UIViewController {
         
     }
     
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationItem.hidesBackButton = true
+    func loadQuestionAnswerData(){
         self.databaseHelper.deleteQuestionData()
         self.questionFetcher.getQuestionFromAPI(userSelectedLevel: self.selectedDifficulty)
         getQuestionsData()
@@ -77,10 +72,18 @@ class QuizLoadingScreenVC: UIViewController {
                 self.navigationController?.pushViewController(toQuestionScreen, animated: true)
             }
         })
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         
     }
     
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadQuestionAnswerData()
+    }
 
 }

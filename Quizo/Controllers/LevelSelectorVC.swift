@@ -16,13 +16,14 @@ class LevelSelectorVC: UIViewController {
     //MARK: Properties
     //------------
     private var levelSelected = ""
+    private var databaseHelper = DBHelper.getInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         quizLevelText.center = view.center
         quizLevelText.font = UIFont(name: "Comfortaa-Bold", size: 42)
-        
+        self.databaseHelper.deleteQuestionData()
     
     }
 

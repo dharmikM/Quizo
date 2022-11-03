@@ -76,7 +76,6 @@ class QuizScreenVC: UIViewController {
                 questionNumberText.text = "Question: \(currentQuestionData.questionID)"
                 questionText.text = "\(specialQuestionCheck)"
                 correctAnswer = specialAnswerCheck
-                print(correctAnswer)
                 let randomNumber = Int.random(in: 1...4)
                 
                 currentQuestionData.incorrectAnswers!.forEach{_ in
