@@ -237,33 +237,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rer-xc-kKw">
-                                        <rect key="frame" x="21" y="72" width="361" height="222"/>
+                                        <rect key="frame" x="21" y="72" width="361" height="153"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Question Text">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="22" name="Comfortaa-SemiBold"/>
+                                                    <font key="NSFont" size="18" name="Comfortaa-SemiBold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qw-Kt-mf6">
-                                        <rect key="frame" x="17" y="302" width="185" height="44"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Options:">
-                                                <attributes>
-                                                    <color key="NSColor" name="LightGreenColor"/>
-                                                    <font key="NSFont" size="19" name="Comfortaa-SemiBold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgo-YC-Cza">
-                                        <rect key="frame" x="44" y="370" width="131" height="50"/>
+                                        <rect key="frame" x="21" y="247" width="346" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
@@ -281,50 +268,8 @@
                                             <action selector="optionOneButton:" destination="3eI-mN-B5W" eventType="touchUpInside" id="XEd-cA-Wze"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6b-sq-LmK">
-                                        <rect key="frame" x="44" y="439" width="131" height="50"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
-                                                <color key="strokeColor" name="GreenColor"/>
-                                            </backgroundConfiguration>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Easy">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" size="16" name="Comfortaa-Bold"/>
-                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="optionThreeButton:" destination="3eI-mN-B5W" eventType="touchUpInside" id="vUD-3J-FSH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-JJ-gnY">
-                                        <rect key="frame" x="216" y="369" width="131" height="51"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
-                                                <color key="strokeColor" name="GreenColor"/>
-                                            </backgroundConfiguration>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Easy">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" size="16" name="Comfortaa-Bold"/>
-                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="optionTwoButton:" destination="3eI-mN-B5W" eventType="touchUpInside" id="R2D-Ph-U8s"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-ga-rbn">
-                                        <rect key="frame" x="216" y="439" width="131" height="50"/>
+                                        <rect key="frame" x="21" y="392" width="346" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
@@ -345,7 +290,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKT-yC-xFQ">
-                                        <rect key="frame" x="61" y="505" width="286" height="94"/>
+                                        <rect key="frame" x="61" y="572" width="286" height="27"/>
                                         <attributedString key="attributedText">
                                             <fragment content="  ">
                                                 <attributes>
@@ -400,48 +345,85 @@
                                             <action selector="finishButton:" destination="3eI-mN-B5W" eventType="touchUpInside" id="Qjk-Ic-gx4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6b-sq-LmK">
+                                        <rect key="frame" x="21" y="464" width="346" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
+                                                <color key="strokeColor" name="GreenColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Easy">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="16" name="Comfortaa-Bold"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="optionThreeButton:" destination="3eI-mN-B5W" eventType="touchUpInside" id="vUD-3J-FSH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-JJ-gnY">
+                                        <rect key="frame" x="21" y="317" width="346" height="51"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="3">
+                                                <color key="strokeColor" name="GreenColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Easy">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="16" name="Comfortaa-Bold"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="optionTwoButton:" destination="3eI-mN-B5W" eventType="touchUpInside" id="R2D-Ph-U8s"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="WKT-yC-xFQ" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="61" id="0Dx-WO-fae"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="WKT-yC-xFQ" secondAttribute="bottom" constant="138" id="1Ja-gV-mHY"/>
-                                    <constraint firstItem="qVN-JJ-gnY" firstAttribute="leading" secondItem="pgo-YC-Cza" secondAttribute="trailing" constant="41" id="1k1-rg-qeb"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="I6b-sq-LmK" secondAttribute="trailing" constant="215" id="54H-sS-Ehw"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="pgo-YC-Cza" secondAttribute="bottom" constant="440" id="2Nq-FC-l9K"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="RFA-7j-ePM" secondAttribute="bottom" constant="48" id="5Yk-A2-amj"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="X2N-cJ-JFg" secondAttribute="trailing" constant="198" id="5ip-lz-IKi"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="qVN-JJ-gnY" secondAttribute="trailing" constant="43" id="5zc-8t-TCy"/>
+                                    <constraint firstItem="pgo-YC-Cza" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="69J-Kb-tXa"/>
                                     <constraint firstItem="X2N-cJ-JFg" firstAttribute="top" secondItem="WKT-yC-xFQ" secondAttribute="bottom" constant="39" id="8bd-jL-Uhu"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="qVN-JJ-gnY" secondAttribute="bottom" constant="317" id="BFg-VP-AmP"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="zcF-ga-rbn" secondAttribute="trailing" constant="43" id="FRw-IF-rqR"/>
+                                    <constraint firstItem="zcF-ga-rbn" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="FwL-rp-wZY"/>
                                     <constraint firstItem="Rer-xc-kKw" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="HYr-4Q-R3h"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="Rer-xc-kKw" secondAttribute="bottom" constant="443" id="IDT-6m-Qik"/>
-                                    <constraint firstItem="zcF-ga-rbn" firstAttribute="leading" secondItem="I6b-sq-LmK" secondAttribute="trailing" constant="41" id="K9T-mI-xOh"/>
-                                    <constraint firstItem="zcF-ga-rbn" firstAttribute="top" secondItem="qVN-JJ-gnY" secondAttribute="bottom" constant="19" id="KMV-ba-Wuu"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="Rer-xc-kKw" secondAttribute="bottom" constant="512" id="IDT-6m-Qik"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="X2N-cJ-JFg" secondAttribute="bottom" constant="48" id="Lxg-1c-xxj"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="qVN-JJ-gnY" secondAttribute="bottom" constant="369" id="MJr-Vf-0j8"/>
                                     <constraint firstItem="RFA-7j-ePM" firstAttribute="leading" secondItem="X2N-cJ-JFg" secondAttribute="trailing" constant="17" id="Mp7-UU-Uld"/>
                                     <constraint firstItem="Rer-xc-kKw" firstAttribute="top" secondItem="pRJ-zT-eR0" secondAttribute="bottom" constant="20" id="NWN-VZ-kW2"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="pgo-YC-Cza" secondAttribute="trailing" constant="215" id="OqZ-QW-88j"/>
-                                    <constraint firstItem="WKT-yC-xFQ" firstAttribute="top" secondItem="I6b-sq-LmK" secondAttribute="bottom" constant="16" id="P3F-Xc-Z4z"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="pgo-YC-Cza" secondAttribute="bottom" constant="317" id="TYc-g4-bte"/>
+                                    <constraint firstItem="pgo-YC-Cza" firstAttribute="top" secondItem="Rer-xc-kKw" secondAttribute="bottom" constant="22" id="Odf-Ka-nfA"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="I6b-sq-LmK" secondAttribute="bottom" constant="223" id="Pag-Bb-M07"/>
+                                    <constraint firstItem="qVN-JJ-gnY" firstAttribute="top" secondItem="pgo-YC-Cza" secondAttribute="bottom" constant="20" id="RaS-3F-dP6"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="RFA-7j-ePM" secondAttribute="trailing" constant="23" id="USe-dm-JWd"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="I6b-sq-LmK" secondAttribute="bottom" constant="248" id="VAP-EE-Moz"/>
                                     <constraint firstItem="pRJ-zT-eR0" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="Wof-zr-zkJ"/>
-                                    <constraint firstItem="I6b-sq-LmK" firstAttribute="top" secondItem="pgo-YC-Cza" secondAttribute="bottom" constant="19" id="Z5c-aK-VEE"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="zcF-ga-rbn" secondAttribute="bottom" constant="248" id="ZbW-Qo-8XI"/>
-                                    <constraint firstItem="I6b-sq-LmK" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="44" id="Zgy-gR-EfL"/>
+                                    <constraint firstItem="zcF-ga-rbn" firstAttribute="top" secondItem="qVN-JJ-gnY" secondAttribute="bottom" constant="24" id="aeL-MP-l9x"/>
                                     <constraint firstItem="RFA-7j-ePM" firstAttribute="top" secondItem="WKT-yC-xFQ" secondAttribute="bottom" constant="39" id="agN-E3-Gk1"/>
-                                    <constraint firstItem="pgo-YC-Cza" firstAttribute="top" secondItem="1qw-Kt-mf6" secondAttribute="bottom" constant="24" id="evM-Lm-gKT"/>
+                                    <constraint firstItem="qVN-JJ-gnY" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="e6p-nE-4OI"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="zcF-ga-rbn" secondAttribute="trailing" constant="23" id="fA5-ql-bN2"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="Rer-xc-kKw" secondAttribute="trailing" constant="8" id="gbr-qP-hOJ"/>
-                                    <constraint firstItem="1qw-Kt-mf6" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="17" id="lhs-gi-tYY"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="pRJ-zT-eR0" secondAttribute="bottom" constant="685" id="loz-Dz-ChJ"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="zcF-ga-rbn" secondAttribute="bottom" constant="295" id="m18-Wq-cTh"/>
                                     <constraint firstItem="X2N-cJ-JFg" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="34" id="mHI-zu-0Ri"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="WKT-yC-xFQ" secondAttribute="trailing" constant="43" id="neA-lX-aeS"/>
-                                    <constraint firstItem="pgo-YC-Cza" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="44" id="peh-G4-ri6"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="I6b-sq-LmK" secondAttribute="trailing" constant="23" id="qZX-es-ke1"/>
                                     <constraint firstItem="pRJ-zT-eR0" firstAttribute="top" secondItem="rV4-30-zDg" secondAttribute="top" constant="8" id="r2Y-kh-Odm"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="1qw-Kt-mf6" secondAttribute="trailing" constant="188" id="sFe-II-86N"/>
-                                    <constraint firstItem="qVN-JJ-gnY" firstAttribute="top" secondItem="Rer-xc-kKw" secondAttribute="bottom" constant="75" id="tFg-tC-x0a"/>
+                                    <constraint firstItem="I6b-sq-LmK" firstAttribute="top" secondItem="zcF-ga-rbn" secondAttribute="bottom" constant="22" id="s18-0s-eaW"/>
                                     <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="pRJ-zT-eR0" secondAttribute="trailing" constant="184" id="u63-8y-y64"/>
-                                    <constraint firstItem="1qw-Kt-mf6" firstAttribute="top" secondItem="Rer-xc-kKw" secondAttribute="bottom" constant="8" id="uGF-FE-rFf"/>
-                                    <constraint firstItem="rV4-30-zDg" firstAttribute="bottom" secondItem="1qw-Kt-mf6" secondAttribute="bottom" constant="391" id="wnx-9s-jFp"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="pgo-YC-Cza" secondAttribute="trailing" constant="23" id="uCs-Er-oZV"/>
+                                    <constraint firstItem="rV4-30-zDg" firstAttribute="trailing" secondItem="qVN-JJ-gnY" secondAttribute="trailing" constant="23" id="ve8-qy-wgw"/>
+                                    <constraint firstItem="I6b-sq-LmK" firstAttribute="leading" secondItem="rV4-30-zDg" secondAttribute="leading" constant="21" id="x0a-Xg-CgA"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="5JC-d4-A8r"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="rV4-30-zDg"/>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class QuizScreenVC: UIViewController {
     
@@ -58,45 +59,90 @@ class QuizScreenVC: UIViewController {
         }
         else{
             if let currentQuestionData = recievedQuestions.first(where: {$0.questionID == questionNo}){
+            
+                //HTML Code fix for Questions
+                let fixedQuestionText = currentQuestionData.question!.replacingOccurrences(of: "&quot;",with: "“")
+                let fixedQuestionTextOne = fixedQuestionText.replacingOccurrences(of: "&#039;",with: "'")
+                let fixedQuestionTextTwo = fixedQuestionTextOne.replacingOccurrences(of: "&amp;",with: "&")
+                let specialQuestionCheck = fixedQuestionTextTwo.folding(options: .diacriticInsensitive, locale: nil)
+
+                
+                //HTML Code fix for Correct Answers
+                let fixedAnswerText = currentQuestionData.correctAnswer!.replacingOccurrences(of: "&quot;",with: "“")
+                let fixedAnswerTextOne = fixedAnswerText.replacingOccurrences(of: "&#039;",with: "'")
+                let fixedAnswerTextTwo = fixedAnswerTextOne.replacingOccurrences(of: "&amp;",with: "&")
+                let specialAnswerCheck = fixedAnswerTextTwo.folding(options: .diacriticInsensitive, locale: nil)
+                
                 questionNumberText.text = "Question: \(currentQuestionData.questionID)"
-                questionText.text = "\(currentQuestionData.question!)"
-                correctAnswer = currentQuestionData.correctAnswer!
+                questionText.text = "\(specialQuestionCheck)"
+                correctAnswer = specialAnswerCheck
+                print(correctAnswer)
                 let randomNumber = Int.random(in: 1...4)
                 
-                switch randomNumber {
-                case 1:
-                    optionOneText.setTitle("\(currentQuestionData.correctAnswer!)",for: .normal)
-                    currentQuestionData.incorrectAnswers!.forEach{_ in
-                        optionTwoText.setTitle("\(currentQuestionData.incorrectAnswers![0])", for: .normal)
-                        optionThreeText.setTitle("\(currentQuestionData.incorrectAnswers![1])", for: .normal)
-                        optionFourText.setTitle("\(currentQuestionData.incorrectAnswers![2])", for: .normal)
-                    }
+                currentQuestionData.incorrectAnswers!.forEach{_ in
+                    //HTML Code fix for Incorrect Answers
                     
+                    //For First Incorrect Answers
+                    let firstIncorrectAnswer = currentQuestionData.incorrectAnswers![0].replacingOccurrences(of: "&#039;",with: "'")
+                    let firstIncorrectAnswerOne = firstIncorrectAnswer.replacingOccurrences(of: "&quot;",with: "”")
+                    let firstIncorrectAnswerTwo = firstIncorrectAnswerOne.replacingOccurrences(of: "&amp;",with: "&")
+                    let specialFirstIncorrectAnswer = firstIncorrectAnswerTwo.folding(options: .diacriticInsensitive, locale: nil)
                     
-                case 2:
-                    optionTwoText.setTitle("\(currentQuestionData.correctAnswer!)",for: .normal)
-                    currentQuestionData.incorrectAnswers!.forEach{_ in
-                        optionOneText.setTitle("\(currentQuestionData.incorrectAnswers![0])", for: .normal)
-                        optionThreeText.setTitle("\(currentQuestionData.incorrectAnswers![1])", for: .normal)
-                        optionFourText.setTitle("\(currentQuestionData.incorrectAnswers![2])", for: .normal)
+                    //For Second Incorrect Answers
+                    let secondIncorrectAnswer = currentQuestionData.incorrectAnswers![1].replacingOccurrences(of: "&#039;",with: "'")
+                    let secondIncorrectAnswerOne = secondIncorrectAnswer.replacingOccurrences(of: "&quot;",with: "”")
+                    let secondIncorrectAnswerTwo = secondIncorrectAnswerOne.replacingOccurrences(of: "&amp;",with: "&")
+                    let specialSecondIncorrectAnswer = secondIncorrectAnswerTwo.folding(options: .diacriticInsensitive, locale: nil)
+                    
+                    //For Third Incorrect Answers
+                    let thirdIncorrectAnswer = currentQuestionData.incorrectAnswers![2].replacingOccurrences(of: "&#039;",with: "'")
+                    let thirdIncorrectAnswerOne = thirdIncorrectAnswer.replacingOccurrences(of: "&quot;",with: "”")
+                    let thirdIncorrectAnswerTwo = thirdIncorrectAnswerOne.replacingOccurrences(of: "&amp;",with: "&")
+                    let specialThirdIncorrectAnswer = thirdIncorrectAnswerTwo.folding(options: .diacriticInsensitive, locale: nil)
+                    
+                    //As per the number selection from th random ,the options are showing
+                    switch randomNumber {
+                    case 1:
+                        optionOneText.setTitle("\(correctAnswer)",for: .normal)
+                        currentQuestionData.incorrectAnswers!.forEach{_ in
+                            
+                            optionTwoText.setTitle("\(specialFirstIncorrectAnswer)", for: .normal)
+                            optionThreeText.setTitle("\(specialSecondIncorrectAnswer)", for: .normal)
+                            optionFourText.setTitle("\(specialThirdIncorrectAnswer)", for: .normal)
+                        }
+                        
+                        
+                    case 2:
+                        optionTwoText.setTitle("\(correctAnswer)",for: .normal)
+                        currentQuestionData.incorrectAnswers!.forEach{_ in
+                            
+                            
+                            optionOneText.setTitle("\(specialFirstIncorrectAnswer)", for: .normal)
+                            optionThreeText.setTitle("\(specialSecondIncorrectAnswer)", for: .normal)
+                            optionFourText.setTitle("\(specialThirdIncorrectAnswer)", for: .normal)
+                        }
+                    case 3:
+                        optionThreeText.setTitle("\(correctAnswer)",for: .normal)
+                        currentQuestionData.incorrectAnswers!.forEach{_ in
+                            
+                            
+                            optionOneText.setTitle("\(specialFirstIncorrectAnswer)", for: .normal)
+                            optionTwoText.setTitle("\(specialSecondIncorrectAnswer)", for: .normal)
+                            optionFourText.setTitle("\(specialThirdIncorrectAnswer)", for: .normal)
+                        }
+                    case 4:
+                        optionFourText.setTitle("\(correctAnswer)",for: .normal)
+                        currentQuestionData.incorrectAnswers!.forEach{_ in
+                            
+                            optionOneText.setTitle("\(specialFirstIncorrectAnswer)", for: .normal)
+                            optionTwoText.setTitle("\(specialSecondIncorrectAnswer)", for: .normal)
+                            optionThreeText.setTitle("\(specialThirdIncorrectAnswer)", for: .normal)
+                        }
+                    default:
+                        print("Printing in default")
                     }
-                case 3:
-                    optionThreeText.setTitle("\(currentQuestionData.correctAnswer!)",for: .normal)
-                    currentQuestionData.incorrectAnswers!.forEach{_ in
-                        optionOneText.setTitle("\(currentQuestionData.incorrectAnswers![0])", for: .normal)
-                        optionTwoText.setTitle("\(currentQuestionData.incorrectAnswers![1])", for: .normal)
-                        optionFourText.setTitle("\(currentQuestionData.incorrectAnswers![2])", for: .normal)
-                    }
-                case 4:
-                    optionFourText.setTitle("\(currentQuestionData.correctAnswer!)",for: .normal)
-                    currentQuestionData.incorrectAnswers!.forEach{_ in
-                        optionOneText.setTitle("\(currentQuestionData.incorrectAnswers![0])", for: .normal)
-                        optionTwoText.setTitle("\(currentQuestionData.incorrectAnswers![1])", for: .normal)
-                        optionThreeText.setTitle("\(currentQuestionData.incorrectAnswers![2])", for: .normal)
-                    }
-                default:
-                    print("Printing in default")
                 }
+                
                 
                 
             }
@@ -107,7 +153,7 @@ class QuizScreenVC: UIViewController {
 
     
     func answerCheck(answerSelected:String){
-        errorMessageText.text = ""
+        errorMessageText.text = "" 
         
             if correctAnswer == answerSelected{
                 errorMessageText.text = "Selected Answer is Correct!! 🎉"
