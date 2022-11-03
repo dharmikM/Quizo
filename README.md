@@ -10,6 +10,8 @@ Library or funtionality: CoreData, UIKit,Api Data fetching
 
 Design: Figma 
 
+Code Editor : Xcode
+
 
 
 ## Design
